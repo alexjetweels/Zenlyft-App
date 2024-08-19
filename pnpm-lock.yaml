@@ -68,6 +68,9 @@ importers:
       expo-splash-screen:
         specifier: 0.27.5
         version: 0.27.5(expo-modules-autolinking@1.11.1)(expo@51.0.19(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
+      expo-sqlite:
+        specifier: ~14.0.6
+        version: 14.0.6(expo@51.0.19(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       expo-status-bar:
         specifier: ~1.12.1
         version: 1.12.1
@@ -1247,6 +1250,9 @@ packages:
   '@expo/vector-icons@14.0.2':
     resolution: {integrity: sha512-70LpmXQu4xa8cMxjp1fydgRPsalefnHaXLzIwaHMEzcZhnyjw2acZz8azRrZOslPVAWlxItOa2Dd7WtD/kI+CA==}
 
+  '@expo/websql@1.0.1':
+    resolution: {integrity: sha512-H9/t1V7XXyKC343FJz/LwaVBfDhs6IqhDtSYWpt8LNSQDVjf5NvVJLc5wp+KCpRidZx8+0+YeHJN45HOXmqjFA==}
+
   '@expo/xcpretty@4.3.1':
     resolution: {integrity: sha512-sqXgo1SCv+j4VtYEwl/bukuOIBrVgx6euIoCat3Iyx5oeoXwEA2USCoeL0IPubflMxncA2INkqJ/Wr3NGrSgzw==}
     hasBin: true
@@ -1303,6 +1309,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -2336,6 +2343,9 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  argsarray@0.0.1:
+    resolution: {integrity: sha512-u96dg2GcAKtpTrBdDoFIM7PjcBA+6rSP0OR94MOReNRyUECL6MtQt5XXmRr4qrftYaef9+l5hcpO5te7sML1Cg==}
 
   aria-query@5.3.0:
     resolution: {integrity: sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==}
@@ -3636,6 +3646,11 @@ packages:
     peerDependencies:
       expo: '*'
 
+  expo-sqlite@14.0.6:
+    resolution: {integrity: sha512-T3YNx7LT7lM4UQRgi8ml+cj0Wf3Ep09+B4CVaWtUCjdyYJIZjsHDT65hypKG+r6btTLLEd11hjlrstNQhzt5gQ==}
+    peerDependencies:
+      expo: '*'
+
   expo-status-bar@1.12.1:
     resolution: {integrity: sha512-/t3xdbS8KB0prj5KG5w7z+wZPFlPtkgs95BsmrP/E7Q0xHXTcDcQ6Cu2FkFuRM+PKTb17cJDnLkawyS5vDLxMA==}
 
@@ -4134,6 +4149,9 @@ packages:
     resolution: {integrity: sha512-541xKlUw6jr/6gGuk92F+mYM5zaFAc5ahphvkqvNe2bQ6gVBkd6bfrmVJ2t4KDAfikAYZyIqTnktX3i6/aQDrQ==}
     engines: {node: '>=16.x'}
     hasBin: true
+
+  immediate@3.3.0:
+    resolution: {integrity: sha512-HR7EVodfFUdQCTIeySw+WDRFJlPcLOJbXfwwZ7Oom6tjsvZ3bOkCDJHehQC3nxJrv7+f9XecwazynjU8e4Vw3Q==}
 
   import-fresh@2.0.0:
     resolution: {integrity: sha512-eZ5H8rcgYazHbKC3PG4ClHNykCSxtAhxSSEM+2mb+7evD2CKF5V7c0dNum7AdpDh0ZdICwZY9sRSn8f+KH96sg==}
@@ -5444,6 +5462,9 @@ packages:
     resolution: {integrity: sha512-LN4fydt9TqhZhThkZIVQnF9cwjU3qmUH9h78Mx/K7d3VvfRqqwthLwJEUOEL0QPZ0XQmNN7be5Ggit5+4dq3Bw==}
     engines: {node: '>=0.12.0'}
 
+  noop-fn@1.0.0:
+    resolution: {integrity: sha512-pQ8vODlgXt2e7A3mIbFDlizkr46r75V+BJxVAyat8Jl7YmI513gG5cfyRL0FedKraoZ+VAouI1h4/IWpus5pcQ==}
+
   normalize-package-data@2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
 
@@ -5896,6 +5917,9 @@ packages:
   postcss@8.4.38:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
     engines: {node: ^10 || ^12 || >=14}
+
+  pouchdb-collections@1.0.1:
+    resolution: {integrity: sha512-31db6JRg4+4D5Yzc2nqsRqsA2oOkZS8DpFav3jf/qVNBxusKa2ClkEIZ2bJNpaDbMfWtnuSq59p6Bn+CipPMdg==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -6916,6 +6940,9 @@ packages:
 
   timm@1.7.1:
     resolution: {integrity: sha512-IjZc9KIotudix8bMaBW6QvMuq64BrJWFs1+4V0lXwWGQZwH+LnX87doAYhem4caOEusRP9/g6jVDQmZ8XOk1nw==}
+
+  tiny-queue@0.2.1:
+    resolution: {integrity: sha512-EijGsv7kzd9I9g0ByCl6h42BWNGUZrlCSejfrb3AKeHC33SGbASu1VDf5O3rRiiUOhAC9CHdZxFPbZu0HmR70A==}
 
   tinycolor2@1.6.0:
     resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
@@ -8996,6 +9023,14 @@ snapshots:
     dependencies:
       prop-types: 15.8.1
 
+  '@expo/websql@1.0.1':
+    dependencies:
+      argsarray: 0.0.1
+      immediate: 3.3.0
+      noop-fn: 1.0.0
+      pouchdb-collections: 1.0.1
+      tiny-queue: 0.2.1
+
   '@expo/xcpretty@4.3.1':
     dependencies:
       '@babel/code-frame': 7.10.4
@@ -10512,6 +10547,8 @@ snapshots:
       sprintf-js: 1.0.3
 
   argparse@2.0.1: {}
+
+  argsarray@0.0.1: {}
 
   aria-query@5.3.0:
     dependencies:
@@ -12072,6 +12109,11 @@ snapshots:
       - expo-modules-autolinking
       - supports-color
 
+  expo-sqlite@14.0.6(expo@51.0.19(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))):
+    dependencies:
+      '@expo/websql': 1.0.1
+      expo: 51.0.19(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))
+
   expo-status-bar@1.12.1: {}
 
   expo-system-ui@3.0.7(expo@51.0.19(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))):
@@ -12666,6 +12708,8 @@ snapshots:
   image-size@1.1.1:
     dependencies:
       queue: 6.0.2
+
+  immediate@3.3.0: {}
 
   import-fresh@2.0.0:
     dependencies:
@@ -14297,6 +14341,8 @@ snapshots:
 
   node-stream-zip@1.15.0: {}
 
+  noop-fn@1.0.0: {}
+
   normalize-package-data@2.5.0:
     dependencies:
       hosted-git-info: 2.8.9
@@ -14778,6 +14824,8 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+
+  pouchdb-collections@1.0.1: {}
 
   prelude-ls@1.2.1: {}
 
@@ -15911,6 +15959,8 @@ snapshots:
   through@2.3.8: {}
 
   timm@1.7.1: {}
+
+  tiny-queue@0.2.1: {}
 
   tinycolor2@1.6.0: {}
 

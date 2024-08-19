@@ -57,6 +57,7 @@
     "expo-localization": "~15.0.3",
     "expo-router": "~3.5.18",
     "expo-splash-screen": "0.27.5",
+    "expo-sqlite": "~14.0.6",
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.7",
     "i18next": "^22.5.1",
